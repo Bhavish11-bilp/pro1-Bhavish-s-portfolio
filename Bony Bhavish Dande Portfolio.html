@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bony Bhavish Dande Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: white;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 100px;
+      background-color: #111;
+      height: 100vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .sidebar div.logo {
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .sidebar img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: white;
+      padding: 18px 0;
+      font-size: 12px;
+      text-align: center;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #333;
+      width: 100%;
+    }
+
+    .main {
+      margin-left: 100px;
+      width: calc(100% - 100px);
+      scroll-behavior: smooth;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 60px 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    section h1 {
+      margin-bottom: 30px;
+      font-size: 3rem;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      max-width: 850px;
+      line-height: 1.6;
+    }
+
+    /* Home */
+    .home {
+      background: url('your-photo.jpg') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .home h1,
+    .home p {
+      position: relative;
+      z-index: 2;
+    }
+
+    .home::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+
+    /* About */
+    .about-img {
+      margin: 25px 0;
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+
+    /* Skills Subheadings */
+    #skills h2 {
+      margin-top: 30px;
+      font-size: 1.8rem;
+      color: #f0a500;
+    }
+
+    #skills p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    /* Contact */
+    #contact h1 {
+      font-size: 3rem;
+    }
+
+    #contact p {
+      font-size: 1.3rem;
+      margin: 12px 0;
+    }
+
+    form {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 12px 30px;
+      background-color: #f0a500;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #d48806;
+    }
+
+    .socials {
+      font-size: 1.7rem;
+      margin: 20px 0;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="logo">BBD</div>
+    <img src="bhavi1.png" alt="Bony Bhavish Dande">
+    <a href="#home">🏠<br>HOME</a>
+    <a href="#about">🙋‍♂️<br>ABOUT</a>
+    <a href="#skills">💡<br>SKILLS</a>
+    <a href="#contact">✉️<br>CONTACT</a>
+  </div>
+
+  <div class="main">
+    <!-- Slide 1: Home -->
+    <section id="home" class="home">
+      <h1>Bony Bhavish Dande</h1>
+      <p>Professional CSE Student</p>
+    </section>
+
+    <!-- Slide 2: About -->
+    <section id="about">
+      <h1>About Me</h1>
+      <img src="bhavi2.jpg" alt="Bony" class="about-img">
+      <p>
+        I am Bony Bhavish Dande, a dedicated Computer Science Engineering student currently pursuing my degree at Amrita Vishwa Vidyapeetham. With a solid educational background from Nalanda Vidya Niketan and FIITJEE, I’ve consistently shown passion for technology and innovation. My journey is driven by curiosity, logic, and a goal to build impactful solutions. I’m from Vijayawada, Andhra Pradesh and I'm committed to becoming a skilled software developer.
+      </p>
+    </section>
+
+    <!-- Slide 3: Skills -->
+    <section id="skills">
+      <h1>My Skills</h1>
+
+      <h2>HTML</h2>
+      <p>I use HTML to build clean and semantic structures for websites. It's the backbone of all my front-end projects.</p>
+
+      <h2>JAVA</h2>
+      <p>My strong foundation in Java allows me to develop logical, object-oriented applications and understand core programming concepts well.</p>
+
+      <h2>PYTHON</h2>
+      <p>With Python, I develop scripts, quick tools, and backend logic. It's my go-to for automation and prototyping ideas.</p>
+    </section>
+
+    <!-- Slide 4: Contact -->
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <p>📍 Vijayawada, Andhra Pradesh</p>
+      <p>📧 <b>bonybhavishdande@gmail.com</b></p>
+      <p>📞 <b>9734486091</b></p>
+
+      <div class="socials">
+        <a href="https://www.instagram.com/yesbhavish/" target="_blank">📸</a>
+        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank">💻</a>
+      </div>
+
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      
+    </section>
+  </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
